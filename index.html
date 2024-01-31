@@ -4,44 +4,145 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PixiJS Live2D Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/dylanNew/live2d/webgl/Live2D/lib/live2d.min.js"></script>
+  <script src="./js/live2d.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pixi.js@6.5.2/dist/browser/pixi.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display/dist/index.min.js"></script>
 </head>
 <body>
-  <div>
-    <textarea id="textToSpeak" placeholder="在这里输入要转换的文本..."></textarea>
-    <button id="speakButton">朗读</button>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-6">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="col-6 mt-5">
+        <div class="mb-3">
+          <label for="mouthOpenMax" class="form-label">嘴型最大值</label>
+          <label id="mouthOpenMax-text">0.7</label>
+          <input type="range" class="form-range" id="mouthOpenMax" min="0" max="1" step="0.1" value="0.7">
+        </div>
+        <div class="mb-3">
+          <label for="mouthSpeed" class="form-label">嘴型變化間格</label>
+          <label id="mouthSpeed-text">150</label>
+          <input type="range" class="form-range" id="mouthSpeed" min="0" max="500" step="50" value="200">
+        </div>
+        <div class="mb-3">
+          <label for="mouthOpenSize" class="form-label">嘴型開合大小</label>
+          <label id="mouthOpenSize-text">0.5</label>
+          <input type="range" class="form-range" id="mouthOpenSize" min="0.1" max="1" step="0.05" value="0.5">
+        </div>
+        <div class="mb-3">
+          <label for="textToSpeak" class="form-label">文字</label>
+          <textarea class="form-control" id="textToSpeak" rows="3">你好! 這是一個測試動嘴的工具</textarea>
+
+          <div class="d-grid gap-2 mt-3">
+            <button id="speakButton" class="btn btn-primary" type="button">送出</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <canvas id="canvas"></canvas>
+
   <script>
-      const url = 'https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/shizuku/shizuku.model.json';
-      (async function main() {
-        const app = new PIXI.Application({
-          view: document.getElementById("canvas"),
-          autoStart: true,
-          resizeTo: window
-        });
 
-        const model = await PIXI.live2d.Live2DModel.from(url);
+    let mouthOpenY = 0;
+    let targetMouthOpenY = 0;
+    let mouthOpenMax = 1;
+    let mouthOpenMin = 0;
 
-        app.stage.addChild(model);
+    document.getElementById('mouthOpenMax').addEventListener("change", function() {
+      document.getElementById('mouthOpenMax-text').innerHTML = document.getElementById('mouthOpenMax').value;
+    });
 
-        model.scale.set(0.6);
+    document.getElementById('mouthSpeed').addEventListener("change", function() {
+      document.getElementById('mouthSpeed-text').innerHTML = document.getElementById('mouthSpeed').value;
+    });
 
-        console.log(model);
+    document.getElementById('mouthOpenSize').addEventListener("change", function() {
+      document.getElementById('mouthOpenSize-text').innerHTML = document.getElementById('mouthOpenSize').value;
+    });
 
-        const updateFn = model.internalModel.motionManager.update;
-  
-        model.internalModel.motionManager.update = () => {
-          updateFn.call(model.internalModel.motionManager);
-          
-          // overwrite the parameter after calling original update function
-          model.internalModel.coreModel.setParamFloat('PARAM_MOUTH_OPEN_Y', 0.5);
-        }
-      })();
 
+    const url = 'https://raw.githubusercontent.com/guansss/pixi-live2d-display/master/test/assets/shizuku/shizuku.model.json';
+    (async function main() {
+      const app = new PIXI.Application({
+        view: document.getElementById("canvas"),
+        autoStart: true,
+        width: 500,
+        height: 600
+      });
+
+      const model = await PIXI.live2d.Live2DModel.from(url);
+      app.stage.addChild(model);
+      model.scale.set(0.4);
+
+      console.log(model);
+
+      const updateFn = model.internalModel.motionManager.update;
+
+      model.internalModel.motionManager.update = () => {
+        updateFn.call(model.internalModel.motionManager);
+        model.internalModel.coreModel.setParamFloat('PARAM_MOUTH_OPEN_Y', mouthOpenY);
+      }
+    })();
+
+    function speak() {
+      const textToSpeak = document.getElementById('textToSpeak').value;
+
+      if (textToSpeak) {
+        const synth = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(textToSpeak);
+
+        utterance.lang = 'zh-TW';
+
+        // 监听朗读进度事件
+        utterance.onboundary = (event) => {
+          targetMouthOpenY = 0.3 + (Math.random() * mouthOpenMax) * 0.7;
+        };
+
+        utterance.onstart = function(event) {
+          console.log("语音合成已开始");
+        };
+
+        utterance.onend = function(event) {
+          // console.log("语音合成已结束");
+          targetMouthOpenY = 0;
+        };
+
+        synth.speak(utterance);
+      } else {
+        alert('請輸入文字！');
+      }
+
+    }
+
+    document.getElementById('speakButton').addEventListener('click', function() {
+      speak();
+    });
+
+    setMouthOpenY()
+    function setMouthOpenY() {
+      let mouthSpeed = parseFloat(document.getElementById('mouthSpeed').value);
+      let mouthOpenSize = parseFloat(document.getElementById('mouthOpenSize').value);
+      mouthOpenMax = parseFloat(document.getElementById('mouthOpenMax').value);
+
+      setTimeout(function(){
+        setMouthOpenY();
+      }, mouthSpeed);
+
+      if (mouthOpenY > mouthOpenMax || mouthOpenY < 0) {
+        return
+      }
+
+      if (targetMouthOpenY > mouthOpenY) {
+        mouthOpenY = Math.min(mouthOpenMax, mouthOpenY + mouthOpenSize);
+      }
+      else {
+        mouthOpenY = Math.max(0, mouthOpenY - mouthOpenSize);
+      }
+    }
   </script>
 </body>
 </html>
