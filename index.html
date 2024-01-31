@@ -10,10 +10,19 @@
 
   <div class="container mt-5">
     <div class="row">
-      <div class="col-6">
+      <div class="col-xl-6">
         <canvas id="canvas"></canvas>
       </div>
-      <div class="col-6 mt-5">
+      <div class="col-xl-6 mt-2">
+        <div class="mb-3">
+          <label for="selectModel" class="form-label">選擇角色</label>
+          <select class="form-select" id="selectModel">
+            <option value="1" selected>Shizuku</option>
+            <option value="2">Hiyori</option>
+            <option value="3">Haru</option>
+          </select>
+        </div>
+        <hr>
         <div class="mb-3">
           <label for="mouthOpenMax" class="form-label">嘴型最大值</label>
           <label id="mouthOpenMax-text">0.7</label>
@@ -21,7 +30,7 @@
         </div>
         <div class="mb-3">
           <label for="mouthSpeed" class="form-label">嘴型變化間格</label>
-          <label id="mouthSpeed-text">150</label>
+          <label id="mouthSpeed-text">200</label>
           <input type="range" class="form-range" id="mouthSpeed" min="0" max="500" step="50" value="200">
         </div>
         <div class="mb-3">
@@ -42,7 +51,7 @@
   </div>
 
   <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
-  <script src="./js/live2d.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/dylanNew/live2d/webgl/Live2D/lib/live2d.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pixi.js@6.5.2/dist/browser/pixi.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display/dist/index.min.js"></script>
   <script src="./js/app.js"></script>
