@@ -1,0 +1,55 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "QRHAGeOZI.moc3",
+		"Textures": [
+			"QRHAGeOZI.8192/texture_00.png",
+			"QRHAGeOZI.8192/texture_01.png"
+		],
+		"Physics": "QRHAGeOZI.physics3.json",
+		"DisplayInfo": "QRHAGeOZI.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "QR",
+				"File": "../../../../../../../../../Users/owner/Desktop/お絵描き関連/live2d/QRはげおじさん（部長、不倫中）/QRHAGepOZI/QR.exp3.json"
+			},
+			{
+				"Name": "kage",
+				"File": "../../../../../../../../../Users/owner/Desktop/お絵描き関連/live2d/QRはげおじさん（部長、不倫中）/QRHAGepOZI/kage.exp3.json"
+			},
+			{
+				"Name": "mmm",
+				"File": "../../../../../../../../../Users/owner/Desktop/お絵描き関連/live2d/QRはげおじさん（部長、不倫中）/QRHAGepOZI/mmm.exp3.json"
+			},
+			{
+				"Name": "namida",
+				"File": "../../../../../../../../../Users/owner/Desktop/お絵描き関連/live2d/QRはげおじさん（部長、不倫中）/QRHAGepOZI/namida.exp3.json"
+			},
+			{
+				"Name": "sekimen",
+				"File": "../../../../../../../../../Users/owner/Desktop/お絵描き関連/live2d/QRはげおじさん（部長、不倫中）/QRHAGepOZI/sekimen.exp3.json"
+			},
+			{
+				"Name": "hikari1",
+				"File": "hikari.exp3.json"
+			},
+			{
+				"Name": "hikari2",
+				"File": "hikari2.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

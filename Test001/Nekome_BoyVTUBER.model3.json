@@ -1,0 +1,18 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "Nekome_BoyVTUBER.moc3",
+		"Textures": [
+			"Nekome_BoyVTUBER.2048/texture_00.png"
+		],
+		"Physics": "Nekome_BoyVTUBER.physics3.json",
+		"DisplayInfo": "Nekome_BoyVTUBER.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}

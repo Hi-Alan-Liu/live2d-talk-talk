@@ -9,6 +9,10 @@ let model = '';
 const model1Path = "https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/shizuku/shizuku.model.json";
 const model2Path = "./hiyori_pro_zh/runtime/hiyori_pro_t11.model3.json";
 const model3Path = "https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/haru/haru_greeter_t03.model3.json";
+const model4Path = "./office_m/office_m.model3.json";
+const model5Path = "./Test001/Nekome_BoyVTUBER.model3.json";
+const model6Path = "./Test002/20230321.model3.json";
+const model7Path = "./Test003/qrhageozi.model3";
 
 document.getElementById('mouthOpenMax').addEventListener("change", function() {
   document.getElementById('mouthOpenMax-text').innerHTML = document.getElementById('mouthOpenMax').value;
@@ -49,10 +53,6 @@ async function createModel1() {
   console.log(model);
 
   model.motion('tap_body');
-
-  // model.internalModel.motionManager.update = () => {
-  //   model.internalModel.coreModel.setParamFloat('PARAM_MOUTH_OPEN_Y', mouthOpenY);
-  // }
 }
 
 async function createModel2() {
@@ -63,10 +63,6 @@ async function createModel2() {
   model.position.y = - 50;
 
   console.log(model);
-
-  // model.internalModel.motionManager.update = () => {
-  //   model.internalModel.coreModel.setParameterValueById("ParamMouthOpenY", mouthOpenY);
-  // }
 }
 
 async function createModel3() {
@@ -76,10 +72,42 @@ async function createModel3() {
   model.position.x = -100;
 
   console.log(model);
+}
 
-//   model.internalModel.motionManager.update = () => {
-//     model.internalModel.coreModel.setParameterValueById("ParamMouthOpenY", mouthOpenY);
-//   }
+async function createModel4() {
+  model = await PIXI.live2d.Live2DModel.from(model4Path);
+  app.stage.addChild(model);
+  // model.scale.set(0.3);
+  // model.position.x = -100;
+
+  console.log(model);
+}
+
+async function createModel5() {
+  model = await PIXI.live2d.Live2DModel.from(model5Path);
+  app.stage.addChild(model);
+  // model.scale.set(0.3);
+  // model.position.x = -100;
+
+  console.log(model);
+}
+
+async function createModel6() {
+  model = await PIXI.live2d.Live2DModel.from(model6Path);
+  app.stage.addChild(model);
+  // model.scale.set(0.3);
+  // model.position.x = -100;
+
+  console.log(model);
+}
+
+async function createModel7() {
+  model = await PIXI.live2d.Live2DModel.from(model7Path);
+  app.stage.addChild(model);
+  // model.scale.set(0.3);
+  // model.position.x = -100;
+
+  console.log(model);
 }
 
 function speak() {
@@ -150,7 +178,15 @@ function changeModel(id) {
     createModel1();
   } else if (modelId == 2) {
     createModel2();
-  } else {
+  } else if (modelId == 3) {
     createModel3();
+  } else if (modelId == 4) {
+    createModel4();
+  } else if (modelId == 5) {
+    createModel5();
+  } else if (modelId == 6) {
+    createModel6();
+  } else {
+    createModel7();
   }
 }

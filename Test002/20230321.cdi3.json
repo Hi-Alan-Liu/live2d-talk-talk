@@ -1,0 +1,737 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamSampleS",
+			"GroupId": "",
+			"Name": "s"
+		},
+		{
+			"Id": "ParamSampleA",
+			"GroupId": "",
+			"Name": "a"
+		},
+		{
+			"Id": "ParamSampleM",
+			"GroupId": "",
+			"Name": "m"
+		},
+		{
+			"Id": "ParamSampleP",
+			"GroupId": "",
+			"Name": "p"
+		},
+		{
+			"Id": "ParamSampleL",
+			"GroupId": "",
+			"Name": "l"
+		},
+		{
+			"Id": "ParamSampleE",
+			"GroupId": "",
+			"Name": "e"
+		},
+		{
+			"Id": "ParamTemp",
+			"GroupId": "",
+			"Name": "temp"
+		},
+		{
+			"Id": "HandLeftPositionZ",
+			"GroupId": "ParamGroup",
+			"Name": "posZ"
+		},
+		{
+			"Id": "HandRightAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "teX"
+		},
+		{
+			"Id": "HandRightAngleZ",
+			"GroupId": "ParamGroup",
+			"Name": "teZ"
+		},
+		{
+			"Id": "HandRightFinger_1_Thumb",
+			"GroupId": "ParamGroup",
+			"Name": "1"
+		},
+		{
+			"Id": "HandRightFinger_2_Index",
+			"GroupId": "ParamGroup",
+			"Name": "2"
+		},
+		{
+			"Id": "HandRightFinger_3_Middle",
+			"GroupId": "ParamGroup",
+			"Name": "3"
+		},
+		{
+			"Id": "HandRightFinger_4_Ring",
+			"GroupId": "ParamGroup",
+			"Name": "4"
+		},
+		{
+			"Id": "HandRightFinger_5_Pinky",
+			"GroupId": "ParamGroup",
+			"Name": "5"
+		},
+		{
+			"Id": "Param15",
+			"GroupId": "ParamGroup",
+			"Name": "handRightOpen"
+		},
+		{
+			"Id": "HandRightPositionX",
+			"GroupId": "ParamGroup",
+			"Name": "posX"
+		},
+		{
+			"Id": "HandRightPositionY",
+			"GroupId": "ParamGroup",
+			"Name": "posY"
+		},
+		{
+			"Id": "HandRightPositionZ",
+			"GroupId": "ParamGroup2",
+			"Name": "posZ"
+		},
+		{
+			"Id": "HandLeftAngleX",
+			"GroupId": "ParamGroup2",
+			"Name": "teX"
+		},
+		{
+			"Id": "HandLeftAngleZ",
+			"GroupId": "ParamGroup2",
+			"Name": "teZ"
+		},
+		{
+			"Id": "HandLeftFinger_1_Thumb",
+			"GroupId": "ParamGroup2",
+			"Name": "1"
+		},
+		{
+			"Id": "HandLeftFinger_2_Index",
+			"GroupId": "ParamGroup2",
+			"Name": "2"
+		},
+		{
+			"Id": "HandLeftFinger_3_Middle",
+			"GroupId": "ParamGroup2",
+			"Name": "3"
+		},
+		{
+			"Id": "HandLeftFinger_4_Ring",
+			"GroupId": "ParamGroup2",
+			"Name": "4"
+		},
+		{
+			"Id": "HandLeftFinger_5_Pinky",
+			"GroupId": "ParamGroup2",
+			"Name": "5"
+		},
+		{
+			"Id": "handLeftOpen",
+			"GroupId": "ParamGroup2",
+			"Name": "handLeftOpen"
+		},
+		{
+			"Id": "HandLeftPositionX",
+			"GroupId": "ParamGroup2",
+			"Name": "posX"
+		},
+		{
+			"Id": "HandLeftPositionY",
+			"GroupId": "ParamGroup2",
+			"Name": "posY"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "Param21",
+			"GroupId": "",
+			"Name": "yBane"
+		},
+		{
+			"Id": "Param18",
+			"GroupId": "",
+			"Name": "tyousei"
+		},
+		{
+			"Id": "Param19",
+			"GroupId": "",
+			"Name": "bmen"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "",
+			"Name": "makeup"
+		},
+		{
+			"Id": "Param17",
+			"GroupId": "",
+			"Name": "XD"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "y1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "y2"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "y3"
+		},
+		{
+			"Id": "Param20",
+			"GroupId": "",
+			"Name": "tyousei"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "",
+			"Name": "x1"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "",
+			"Name": "x2"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "",
+			"Name": "arm1"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "",
+			"Name": "arm2"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "",
+			"Name": "arm3"
+		},
+		{
+			"Id": "Param14",
+			"GroupId": "",
+			"Name": "handTracking"
+		},
+		{
+			"Id": "Param16",
+			"GroupId": "",
+			"Name": "handTrackingL"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "",
+			"Name": "mask"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "左目　開閉"
+		},
+		{
+			"Id": "Param11",
+			"GroupId": "",
+			"Name": "me1"
+		},
+		{
+			"Id": "Param12",
+			"GroupId": "",
+			"Name": "me2"
+		},
+		{
+			"Id": "Param13",
+			"GroupId": "",
+			"Name": "me3"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "",
+			"Name": "左目　笑顔"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "右目　開閉"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "右目　笑顔"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "目玉 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "目玉 Y"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "左眉　上下"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "",
+			"Name": "左眉　変形"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "",
+			"Name": "左眉　左右"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "",
+			"Name": "右眉　左右"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "",
+			"Name": "左眉　角度"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "",
+			"Name": "右眉　角度"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "",
+			"Name": "右眉　変形"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "口　変形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "口　開閉"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "",
+			"Name": "照れ"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "体の回転　X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "体の回転　Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "体の回転　Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "髪揺れ　前"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "髪揺れ　横"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "髪揺れ　後"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "Folder 1"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "Folder 2"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "フォルダー 1"
+		},
+		{
+			"Id": "Part2",
+			"Name": "手R のコピー 2"
+		},
+		{
+			"Id": "Part3",
+			"Name": "フォルダー 23"
+		},
+		{
+			"Id": "Part4",
+			"Name": "頭部"
+		},
+		{
+			"Id": "Part33",
+			"Name": "身体"
+		},
+		{
+			"Id": "Part53",
+			"Name": "髪b のコピー"
+		},
+		{
+			"Id": "Part60",
+			"Name": "髪b"
+		},
+		{
+			"Id": "Part74",
+			"Name": "パーツ1"
+		},
+		{
+			"Id": "Part63",
+			"Name": "フォルダー 11"
+		},
+		{
+			"Id": "Part5",
+			"Name": "頬など"
+		},
+		{
+			"Id": "Part6",
+			"Name": "フォルダー 11"
+		},
+		{
+			"Id": "Part10",
+			"Name": "マスク"
+		},
+		{
+			"Id": "Part11",
+			"Name": "フォルダー 4"
+		},
+		{
+			"Id": "Part12",
+			"Name": "フォルダー 5 のコピー"
+		},
+		{
+			"Id": "Part19",
+			"Name": "フォルダー 5"
+		},
+		{
+			"Id": "Part26",
+			"Name": "口"
+		},
+		{
+			"Id": "Part30",
+			"Name": "鼻"
+		},
+		{
+			"Id": "Part31",
+			"Name": "髪f のコピー"
+		},
+		{
+			"Id": "Part32",
+			"Name": "顔"
+		},
+		{
+			"Id": "Part34",
+			"Name": "服"
+		},
+		{
+			"Id": "Part37",
+			"Name": "首"
+		},
+		{
+			"Id": "Part38",
+			"Name": "下半身"
+		},
+		{
+			"Id": "Part47",
+			"Name": "手RR のコピー"
+		},
+		{
+			"Id": "Part50",
+			"Name": "手RR"
+		},
+		{
+			"Id": "Part54",
+			"Name": "フォルダー 6 のコピー"
+		},
+		{
+			"Id": "Part56",
+			"Name": "フォルダー 6"
+		},
+		{
+			"Id": "Part58",
+			"Name": "フォルダー 9 のコピー"
+		},
+		{
+			"Id": "Part59",
+			"Name": "フォルダー 2 のコピー"
+		},
+		{
+			"Id": "Part61",
+			"Name": "フォルダー 9"
+		},
+		{
+			"Id": "Part62",
+			"Name": "フォルダー 2"
+		},
+		{
+			"Id": "Part75",
+			"Name": "パーツ3"
+		},
+		{
+			"Id": "Part76",
+			"Name": "パーツ3"
+		},
+		{
+			"Id": "Part77",
+			"Name": "パーツ3"
+		},
+		{
+			"Id": "Part78",
+			"Name": "パーツ3"
+		},
+		{
+			"Id": "Part79",
+			"Name": "パーツ3"
+		},
+		{
+			"Id": "Part80",
+			"Name": "パーツ3"
+		},
+		{
+			"Id": "Part64",
+			"Name": "フォルダー 12 のコピー"
+		},
+		{
+			"Id": "Part69",
+			"Name": "フォルダー 12"
+		},
+		{
+			"Id": "Part7",
+			"Name": "髪ｌ のコピー"
+		},
+		{
+			"Id": "Part8",
+			"Name": "髪ｌ"
+		},
+		{
+			"Id": "Part9",
+			"Name": "髪f"
+		},
+		{
+			"Id": "Part13",
+			"Name": "瞼横 のコピー"
+		},
+		{
+			"Id": "Part14",
+			"Name": "付けまつげ のコピー 2"
+		},
+		{
+			"Id": "Part15",
+			"Name": "目玉_最後に左右カット のコピー"
+		},
+		{
+			"Id": "Part18",
+			"Name": "白目 のコピー"
+		},
+		{
+			"Id": "Part20",
+			"Name": "瞼横"
+		},
+		{
+			"Id": "Part21",
+			"Name": "付けまつげ"
+		},
+		{
+			"Id": "Part22",
+			"Name": "目玉_最後に左右カット"
+		},
+		{
+			"Id": "Part25",
+			"Name": "白目"
+		},
+		{
+			"Id": "Part27",
+			"Name": "フォルダー 30 のコピー"
+		},
+		{
+			"Id": "Part28",
+			"Name": "リップ"
+		},
+		{
+			"Id": "Part29",
+			"Name": "フォルダー 3"
+		},
+		{
+			"Id": "Part35",
+			"Name": "フォルダー 12"
+		},
+		{
+			"Id": "Part36",
+			"Name": "フォルダー 7 のコピー 2"
+		},
+		{
+			"Id": "Part39",
+			"Name": "フォルダー 20"
+		},
+		{
+			"Id": "Part40",
+			"Name": "フォルダー 18"
+		},
+		{
+			"Id": "Part41",
+			"Name": "フォルダー 22 のコピー"
+		},
+		{
+			"Id": "Part44",
+			"Name": "フォルダー 22"
+		},
+		{
+			"Id": "Part48",
+			"Name": "肘R のコピー"
+		},
+		{
+			"Id": "Part49",
+			"Name": "手R のコピー"
+		},
+		{
+			"Id": "Part51",
+			"Name": "肘R"
+		},
+		{
+			"Id": "Part52",
+			"Name": "手R"
+		},
+		{
+			"Id": "Part55",
+			"Name": "フォルダー 16 のコピー"
+		},
+		{
+			"Id": "Part57",
+			"Name": "フォルダー 16"
+		},
+		{
+			"Id": "Part65",
+			"Name": "フォルダー 15 のコピー"
+		},
+		{
+			"Id": "Part66",
+			"Name": "フォルダー 14 のコピー"
+		},
+		{
+			"Id": "Part67",
+			"Name": "フォルダー 13 のコピー"
+		},
+		{
+			"Id": "Part68",
+			"Name": "フォルダー 16 のコピー"
+		},
+		{
+			"Id": "Part70",
+			"Name": "フォルダー 15"
+		},
+		{
+			"Id": "Part71",
+			"Name": "フォルダー 14"
+		},
+		{
+			"Id": "Part72",
+			"Name": "フォルダー 13"
+		},
+		{
+			"Id": "Part73",
+			"Name": "フォルダー 16"
+		},
+		{
+			"Id": "Part16",
+			"Name": "ハイライト のコピー"
+		},
+		{
+			"Id": "Part17",
+			"Name": "中身 のコピー"
+		},
+		{
+			"Id": "Part23",
+			"Name": "ハイライト"
+		},
+		{
+			"Id": "Part24",
+			"Name": "中身"
+		},
+		{
+			"Id": "Part42",
+			"Name": "フォルダー 17 のコピー"
+		},
+		{
+			"Id": "Part45",
+			"Name": "フォルダー 17"
+		},
+		{
+			"Id": "Part43",
+			"Name": "フォルダー 19 のコピー"
+		},
+		{
+			"Id": "Part46",
+			"Name": "フォルダー 19"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"HandRightPositionX",
+			"HandRightPositionY"
+		],
+		[
+			"HandLeftPositionX",
+			"HandLeftPositionY"
+		],
+		[
+			"ParamAngleX",
+			"ParamAngleY"
+		],
+		[
+			"ParamMouthForm",
+			"ParamMouthOpenY"
+		]
+	]
+}

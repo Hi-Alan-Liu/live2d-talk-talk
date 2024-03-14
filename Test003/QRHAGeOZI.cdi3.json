@@ -1,0 +1,320 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "Paramsekimen",
+			"GroupId": "ParamGroup",
+			"Name": "☆赤面"
+		},
+		{
+			"Id": "QRpop2",
+			"GroupId": "ParamGroup",
+			"Name": "☆QRpopキー"
+		},
+		{
+			"Id": "QRpop",
+			"GroupId": "ParamGroup",
+			"Name": "QRpop"
+		},
+		{
+			"Id": "kage",
+			"GroupId": "ParamGroup",
+			"Name": "☆kage"
+		},
+		{
+			"Id": "kage2",
+			"GroupId": "ParamGroup",
+			"Name": "☆hikari1"
+		},
+		{
+			"Id": "kage3",
+			"GroupId": "ParamGroup",
+			"Name": "☆hikari2"
+		},
+		{
+			"Id": "namida",
+			"GroupId": "ParamGroup",
+			"Name": "☆namida"
+		},
+		{
+			"Id": "mmm",
+			"GroupId": "ParamGroup",
+			"Name": "☆mmm"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "左目　開閉"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "",
+			"Name": "左目　笑顔"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "右目　開閉"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "右目　笑顔"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "目玉 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "目玉 Y"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "",
+			"Name": "左眉　変形"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "",
+			"Name": "右眉　変形"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "口　変形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "口　開閉"
+		},
+		{
+			"Id": "mouthX",
+			"GroupId": "",
+			"Name": "mouthX"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "",
+			"Name": "照れ"
+		},
+		{
+			"Id": "koe",
+			"GroupId": "",
+			"Name": "koe"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "体の回転　X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "体の回転　Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "体の回転　Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Paramneko1",
+			"GroupId": "ParamGroup2",
+			"Name": "ねく-1"
+		},
+		{
+			"Id": "Paramneko2",
+			"GroupId": "ParamGroup2",
+			"Name": "ねく-2"
+		},
+		{
+			"Id": "Paramneko3",
+			"GroupId": "ParamGroup2",
+			"Name": "ねく-3"
+		},
+		{
+			"Id": "hiakriyure",
+			"GroupId": "",
+			"Name": "hiakri"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "fuku"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "fuku2"
+		},
+		{
+			"Id": "ParamUDE1L",
+			"GroupId": "ParamGroup3",
+			"Name": "udeL"
+		},
+		{
+			"Id": "ParamUDE1L2",
+			"GroupId": "ParamGroup3",
+			"Name": "udeL2"
+		},
+		{
+			"Id": "ParamUDER",
+			"GroupId": "ParamGroup3",
+			"Name": "udeR"
+		},
+		{
+			"Id": "ParamUDER2",
+			"GroupId": "ParamGroup3",
+			"Name": "udeR2"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "QRポップアップ"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "ネクタイ"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "Folder 1"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part42",
+			"Name": "QRはげおじさんパーツ分け２.psd（対応無し）"
+		},
+		{
+			"Id": "Part21",
+			"Name": "QR.psd"
+		},
+		{
+			"Id": "Part",
+			"Name": "眉"
+		},
+		{
+			"Id": "Part2",
+			"Name": "目(2)"
+		},
+		{
+			"Id": "Part4",
+			"Name": "目下書き"
+		},
+		{
+			"Id": "Part5",
+			"Name": "フォルダ24"
+		},
+		{
+			"Id": "Part6",
+			"Name": "口"
+		},
+		{
+			"Id": "Part11",
+			"Name": "はげ"
+		},
+		{
+			"Id": "Part12",
+			"Name": "輪郭"
+		},
+		{
+			"Id": "Part13",
+			"Name": "みみ"
+		},
+		{
+			"Id": "Part14",
+			"Name": "上"
+		},
+		{
+			"Id": "Part15",
+			"Name": "シャツ"
+		},
+		{
+			"Id": "Part16",
+			"Name": "下半身"
+		},
+		{
+			"Id": "Part17",
+			"Name": "フォルダ18"
+		},
+		{
+			"Id": "Part18",
+			"Name": "首"
+		},
+		{
+			"Id": "Part40",
+			"Name": "後上"
+		},
+		{
+			"Id": "Part19",
+			"Name": "フォルダ22"
+		},
+		{
+			"Id": "Part3",
+			"Name": "フォルダ5"
+		},
+		{
+			"Id": "Part20",
+			"Name": "フォルダ5"
+		},
+		{
+			"Id": "Part7",
+			"Name": "フォルダ6"
+		},
+		{
+			"Id": "Part8",
+			"Name": "フォルダ10"
+		},
+		{
+			"Id": "Part9",
+			"Name": "フォルダ7"
+		},
+		{
+			"Id": "Part10",
+			"Name": "フォルダ8"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamEyeBallX",
+			"ParamEyeBallY"
+		],
+		[
+			"ParamMouthForm",
+			"ParamMouthOpenY"
+		],
+		[
+			"ParamBodyAngleX",
+			"ParamBodyAngleY"
+		]
+	]
+}
