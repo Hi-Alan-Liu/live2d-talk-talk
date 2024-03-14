@@ -12,7 +12,6 @@ const model3Path = "https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test
 const model4Path = "./office_m/office_m.model3.json";
 const model5Path = "./Test001/Nekome_BoyVTUBER.model3.json";
 const model6Path = "./Test002/20230321.model3.json";
-const model7Path = "./Test003/qrhageozi.model3";
 
 document.getElementById('mouthOpenMax').addEventListener("change", function() {
   document.getElementById('mouthOpenMax-text').innerHTML = document.getElementById('mouthOpenMax').value;
@@ -77,8 +76,9 @@ async function createModel3() {
 async function createModel4() {
   model = await PIXI.live2d.Live2DModel.from(model4Path);
   app.stage.addChild(model);
-  // model.scale.set(0.3);
-  // model.position.x = -100;
+  model.scale.set(0.2);
+  model.position.x = -125;
+  model.position.y = 0;
 
   console.log(model);
 }
@@ -86,8 +86,9 @@ async function createModel4() {
 async function createModel5() {
   model = await PIXI.live2d.Live2DModel.from(model5Path);
   app.stage.addChild(model);
-  // model.scale.set(0.3);
-  // model.position.x = -100;
+  model.scale.set(0.3);
+  model.position.x = -325;
+  model.position.y = -150;
 
   console.log(model);
 }
@@ -95,17 +96,9 @@ async function createModel5() {
 async function createModel6() {
   model = await PIXI.live2d.Live2DModel.from(model6Path);
   app.stage.addChild(model);
-  // model.scale.set(0.3);
-  // model.position.x = -100;
-
-  console.log(model);
-}
-
-async function createModel7() {
-  model = await PIXI.live2d.Live2DModel.from(model7Path);
-  app.stage.addChild(model);
-  // model.scale.set(0.3);
-  // model.position.x = -100;
+  model.scale.set(0.15);
+  model.position.x = -100;
+  model.position.y = -300;
 
   console.log(model);
 }
